@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.learning_camp.mapper.DormitoryMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.learning_camp.entity.Dormitory">
+        <id column="dormitory_id" property="dormitoryId" />
+        <result column="dormitory_name" property="dormitoryName" />
+        <result column="dormitory_type" property="dormitoryType" />
+        <result column="dormitory_amount" property="dormitoryAmount" />
+        <result column="dormitory_capacity" property="dormitoryCapacity" />
+        <result column="user_id" property="userId" />
+        <result column="dormitory_address" property="dormitoryAddress" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        dormitory_id, dormitory_name, dormitory_type, dormitory_amount, dormitory_capacity, user_id, dormitory_address
+    </sql>
+
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.learning_camp.mapper.TravelerMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.learning_camp.entity.Traveler">
+        <id column="traveler_id" property="travelerId" />
+        <result column="traveler_name" property="travelerName" />
+        <result column="traveler_ID_num" property="travelerIdNum" />
+        <result column="traveler_tel" property="travelerTel" />
+        <result column="eu_id" property="euId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        traveler_id, traveler_name, traveler_ID_num, traveler_tel, eu_id
+    </sql>
+
+</mapper>

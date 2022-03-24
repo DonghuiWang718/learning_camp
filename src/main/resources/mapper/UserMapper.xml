@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.learning_camp.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.learning_camp.entity.User">
+        <id column="user_id" property="userId" />
+        <result column="username" property="username" />
+        <result column="nickname" property="nickname" />
+        <result column="password" property="password" />
+        <result column="avatar_path" property="avatarPath" />
+        <result column="gr_code" property="grCode" />
+        <result column="invite_code" property="inviteCode" />
+        <result column="name" property="name" />
+        <result column="sex" property="sex" />
+        <result column="age" property="age" />
+        <result column="tel" property="tel" />
+        <result column="email" property="email" />
+        <result column="unit" property="unit" />
+        <result column="plan_id" property="planId" />
+        <result column="dept_id" property="deptId" />
+        <result column="dormitory_id" property="dormitoryId" />
+        <result column="group_id" property="groupId" />
+        <result column="leader_user_id" property="leaderUserId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        user_id, username, nickname, password, avatar_path, gr_code, invite_code, name, sex, age, tel, email, unit, plan_id, dept_id, dormitory_id, group_id, leader_user_id
+    </sql>
+
+</mapper>

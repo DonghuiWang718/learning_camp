@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.learning_camp.mapper.PlanMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.learning_camp.entity.Plan">
+        <id column="plan_id" property="planId" />
+        <result column="plan_name" property="planName" />
+        <result column="item_id" property="itemId" />
+        <result column="duration" property="duration" />
+        <result column="startdate" property="startdate" />
+        <result column="enddate" property="enddate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        plan_id, plan_name, item_id, duration, startdate, enddate
+    </sql>
+
+</mapper>

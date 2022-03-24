@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.learning_camp.mapper.RegionalResourcesMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.learning_camp.entity.RegionalResources">
+        <id column="rr_id" property="rrId" />
+        <result column="rr_name" property="rrName" />
+        <result column="rr_context" property="rrContext" />
+        <result column="rr_img" property="rrImg" />
+        <result column="area_id" property="areaId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        rr_id, rr_name, rr_context, rr_img, area_id
+    </sql>
+
+</mapper>

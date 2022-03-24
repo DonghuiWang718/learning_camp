@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.learning_camp.mapper.TravelArrangeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.learning_camp.entity.TravelArrange">
+        <id column="ta_id" property="taId" />
+        <result column="ca_id" property="caId" />
+        <result column="car_id" property="carId" />
+        <result column="ta_datetime" property="taDatetime" />
+        <result column="driver_name" property="driverName" />
+        <result column="driver_tel" property="driverTel" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ta_id, ca_id, car_id, ta_datetime, driver_name, driver_tel
+    </sql>
+
+</mapper>

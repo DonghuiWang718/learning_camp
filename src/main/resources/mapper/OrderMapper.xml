@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.learning_camp.mapper.OrderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.learning_camp.entity.Order">
+        <id column="order_id" property="orderId" />
+        <result column="price" property="price" />
+        <result column="num" property="num" />
+        <result column="total_price" property="totalPrice" />
+        <result column="actual_payment" property="actualPayment" />
+        <result column="item_id" property="itemId" />
+        <result column="eu_id" property="euId" />
+        <result column="pay_date" property="payDate" />
+        <result column="order_date" property="orderDate" />
+        <result column="order_state" property="orderState" />
+        <result column="comment_context" property="commentContext" />
+        <result column="comment_img" property="commentImg" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        order_id, price, num, total_price, actual_payment, item_id, eu_id, pay_date, order_date, order_state, comment_context, comment_img
+    </sql>
+
+</mapper>

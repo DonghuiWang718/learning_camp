@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.learning_camp.mapper.DormitoryArrangeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.learning_camp.entity.DormitoryArrange">
+        <id column="da_id" property="daId" />
+        <result column="dormitory_id" property="dormitoryId" />
+        <result column="user_id" property="userId" />
+        <result column="da_grade" property="daGrade" />
+        <result column="da_score" property="daScore" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        da_id, dormitory_id, user_id, da_grade, da_score
+    </sql>
+
+</mapper>

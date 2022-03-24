@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.learning_camp.mapper.SpecialColumnMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.learning_camp.entity.SpecialColumn">
+        <id column="sc_id" property="scId" />
+        <result column="sc_num" property="scNum" />
+        <result column="sc_title" property="scTitle" />
+        <result column="sc_price" property="scPrice" />
+        <result column="sc_img" property="scImg" />
+        <result column="sc_url" property="scUrl" />
+        <result column="dept_id" property="deptId" />
+        <result column="sc_context" property="scContext" />
+        <result column="priority_number" property="priorityNumber" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        sc_id, sc_num, sc_title, sc_price, sc_img, sc_url, dept_id, sc_context, priority_number
+    </sql>
+
+</mapper>

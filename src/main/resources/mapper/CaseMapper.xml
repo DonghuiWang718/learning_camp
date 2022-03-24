@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.learning_camp.mapper.CaseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.learning_camp.entity.Case">
+        <id column="case_id" property="caseId" />
+        <result column="case_title" property="caseTitle" />
+        <result column="case_schoole" property="caseSchoole" />
+        <result column="case_num" property="caseNum" />
+        <result column="case_site" property="caseSite" />
+        <result column="date" property="date" />
+        <result column="case_url" property="caseUrl" />
+        <result column="dept_id" property="deptId" />
+        <result column="case_context" property="caseContext" />
+        <result column="priority_number" property="priorityNumber" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        case_id, case_title, case_schoole, case_num, case_site, date, case_url, dept_id, case_context, priority_number
+    </sql>
+
+</mapper>
